@@ -150,6 +150,21 @@ paths:
                   $ref: '#/components/schemas/ReturnPostingDto'
       tags:
         - postings
+  /api/postings/me:
+    get:
+      operationId: PostingsController_getPostingsByUser
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ReturnPostingDto'
+      tags:
+        - postings
   /api/postings/{id}:
     get:
       operationId: PostingsController_getPosting
