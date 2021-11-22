@@ -366,6 +366,7 @@ components:
           type: string
         imgPath:
           type: string
+          nullable: true
         category:
           type: string
         reports:
