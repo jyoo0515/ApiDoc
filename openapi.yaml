@@ -455,6 +455,7 @@ components:
           type: string
         image:
           type: object
+          nullable: true
       required:
         - text
         - category
@@ -468,6 +469,7 @@ components:
           type: string
         image:
           type: object
+          nullable: true
     CreateCommentDto:
       type: object
       properties:
